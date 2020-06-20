@@ -1,0 +1,17 @@
+.guest-search-container {
+    background-color: #ededed;
+    margin: 1%;
+    width: -webkit-fill-available;
+    padding: 2%;
+}
+
+.guest-search-container input{
+    width: inherit;
+    background-color: #ededed;
+    border: none;
+ }
+
+ .guest-search-container input:focus {
+    outline-width: 0;
+}
+

@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.App-Position {
+    margin: auto;
+    width: 50%;
+    padding: 2% 4% 3% 4%;
+    background-color: #ffffff;
+}

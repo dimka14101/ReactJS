@@ -1,0 +1,24 @@
+.status-button {
+    
+    position: absolute;
+    right: 3%;
+    top: 10%;
+    border-radius: 5px;
+    width: 25%;
+    height: 30%;
+}
+
+.status-button.arrive {
+    background-color: #94c11e;
+}
+
+.status-button.absent {
+    background-color: #c11e1e;
+}
+
+.guest-item-container {
+    padding: 2% 4% 2% 3%;
+    background-color: #f6f6f6;
+    margin: 1%;
+    position: relative;
+}
