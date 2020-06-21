@@ -16,9 +16,12 @@
     background-color: #c11e1e;
 }
 
-.guest-item-container {
-    padding: 2% 4% 2% 3%;
-    background-color: #f6f6f6;
-    margin: 1%;
-    position: relative;
+.footer-button {
+    border-radius: 5px;
+    width: 40%;
+    height: 30%;
+    border: none;
+    margin: 3%;
+    padding: 2%;
+    background-color: #94c11e;
 }

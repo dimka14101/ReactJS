@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
+import * as cnst from '../Constants/UIConstants'
+import Button from './Button'
 import '../Styles/InvitationItem.css'
 
-class InvitationItem extends Component{
 
+class InvitationItem extends Component{
 
     render = () => {
         const { user, changer } = this.props;				
@@ -12,30 +14,25 @@ class InvitationItem extends Component{
             <div
                 className="guest-item-container"
             >
-                {/* TODO: move strings to constants */}
-                    Гість 
-                    <b> { guest.name } </b> 
-                    працює в компанії
-                    <b> "{ guest.company.toUpperCase() }" </b>
+                    { cnst.GUEST_TEXT }
+                <b> { guest.name } </b> 
+                    { cnst.GUEST_WORKS_AT }
+                <b> "{ guest.company.toUpperCase() }" </b>
                 <br/>               
-                    Його контакти:
+                    { cnst.GUEST_CONTACTS }
                 <br/>
-                    <b> { guest.phone } </b>
+                <b> { guest.phone } </b>
                 <br/>
-                    <b> { guest.address } </b>
+                <b> { guest.address } </b>
                 
-                {/* TODO: mb create new component for button */}
-                <div> 
-                    <button 
-                        onClick={changer( guest.index )}
-                        className={'status-button ' + (arrived ? "arrive" : "absent")}
-                    > 
-                        { arrived ? "Прибув" : "Не прибув"} 
-                    </button>
-                </div>
+                <Button 
+                    index = { user.guest._id }
+                    changer = { changer }
+                    text = { arrived ? cnst.ARRIVE_TEXT : cnst.ABSENT_TEXT }
+                    theme = { 'status-button ' + (arrived ? "arrive" : "absent") } 
+                />
             </div>
 
-           
         );
     }
 }
