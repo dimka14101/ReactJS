@@ -71,7 +71,7 @@ class App extends Component{
 		});
 
 		//just for animation and visualization
-		setTimeout(function(){
+		setTimeout(() =>{
 			let filteredGuests = changedUsers.filter( user => {
 				return  user.arrived === false;
 			});
@@ -79,7 +79,7 @@ class App extends Component{
 				guests: filteredGuests,
 				resultCount: filteredGuests.length
 		});
-		}.bind(this), 1000);
+		}, 1000);
 	}
 
 	handleSearch = (e) => {
