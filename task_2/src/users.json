@@ -1,0 +1,103 @@
+[
+    {
+      "head": true,
+      "key": "5e5f7ded0deecd94fe98f551",
+      "UserID": "User ID",
+      "UserName": "Name",
+      "Count": "Bananas",
+      "FreeText": "Comment"
+    },
+    {
+      "head": false,
+      "key": "5e5f7ded0deecd94fe98f552",
+      "UserID": 1,
+      "UserName": "Bob",
+      "Count": "12",
+      "FreeText": {
+        "Type": "Date",
+        "Value": "01/01/2001"
+      }
+    },
+    {
+      "head": false,
+      "key": "5e5f7ded0deecd94fe98f553",
+      "UserID": 2,
+      "UserName": "Kevin",
+      "Count": "5",
+      "FreeText": {
+        "Type": "Number",
+        "Value": "1410"
+      }
+    },
+    {
+      "head": false,
+      "key": "5e5f7ded0deecd94fe98f554",
+      "UserID": 3,
+      "UserName": "Stuart",
+      "Count": "2532",
+      "FreeText": {
+        "Type": "Сurrency",
+        "Badge": "$",
+        "Value": "1000"
+      }
+    },
+    {
+      "head": false,
+      "key": "5e5f7ded0deecd94fe98f555",
+      "UserID": 4,
+      "UserName": "Dave",
+      "Count": "4",
+      "FreeText": {
+        "Type": "Text",
+        "Value": "some comment"
+      }
+    },
+    {
+      "head": false,
+      "key": "5e5f7ded0deecd94fe98f556",
+      "UserID": 5,
+      "UserName": "Jerry",
+      "Count": null,
+      "FreeText": {
+        "Type": "Сurrency",
+        "Badge": null,
+        "Value": "12"
+      }
+    },
+    {
+      "head": false,
+      "key": "5e5f7ded0deecd94fe98f557",
+      "UserID": 6,
+      "UserName": "Mark",
+      "Count": "32",
+      "FreeText": {
+        "Type": "Сurrency",
+        "Badge": null,
+        "Value": "65"
+      }
+    },
+    {
+      "head": false,
+      "key": "5e5f7ded0deecd94fe98f558",
+      "UserID": 7,
+      "UserName": "Phil",
+      "Count": "2341",
+      "FreeText": {
+        "Type": "Сurrency",
+        "Badge": "£",
+        "Value": "231"
+      }
+    },
+    {
+      "head": false,
+      "key": "5e5f7ded0deecd94fe98f559",
+      "UserID": 83,
+      "UserName": "Carl",
+      "Count": "400",
+      "FreeText": {
+        "Type": "Сurrency",
+        "Badge": "₴",
+        "Value": "958"
+      }
+    }
+  ]
