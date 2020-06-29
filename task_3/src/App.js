@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
+import ImageLoader from './Components/ImageLoader'
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+
+  onLoadSuccess = (path)  => {
+    var imgSize = path.total/1024;
+
+    //image source for validation and post to server
+    var img = path.target.result;
+
+    console.log('[ImageLoader] -> Action finished. Image size: ', imgSize, 'kb' );
+  }
+
+  render = () => {
+    const { onLoadSuccess } = this;
+
+    return (
+      <div className="App">
+        <ImageLoader 
+          onSuccess={ onLoadSuccess }
+        />
+      </div>
+    );
+  }
+
 }
 
 export default App;
