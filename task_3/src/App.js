@@ -5,10 +5,10 @@ import './App.css';
 class App extends Component {
 
   onLoadSuccess = (path)  => {
-    var imgSize = path.total/1024;
+    let imgSize = path.total/1024;
 
     //image source for validation and post to server
-    var img = path.target.result;
+    //let img = path.target.result;
 
     console.log('[ImageLoader] -> Action finished. Image size: ', imgSize, 'kb' );
   }

@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import PropTypes from 'prop-types';
 import '../Styles/ImageLoader.css'
 import DefaultImage from '../Images/sample.jpg'
 
@@ -9,6 +10,7 @@ class ImageLoader extends Component {
     }
 
     handleFileSelect = (event) => {
+        console.log('[ImageLoader] -> Handled File Select');
         let files = event.target.files;
 
         if (files && files[0]) {
@@ -53,5 +55,9 @@ class ImageLoader extends Component {
         )
     }
 }
+
+ImageLoader.propTypes = {
+    onSuccess: PropTypes.func.isRequired,
+};
 
 export default ImageLoader;
