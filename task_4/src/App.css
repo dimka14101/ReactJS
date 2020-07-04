@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+.App-Position {
+  margin: auto;
+  width: 50%;
+  padding: 2% 3% 3% 3%;
+}
+
+.App-Position.light {
+  background-color: #ffffff;
+}
+
+.App-Position.dark {
+  background-color: #676767;
+}
+
+.App-Footer {
+  margin: auto;
+  width: 70%;
+}

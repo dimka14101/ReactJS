@@ -1,0 +1,9 @@
+.header-container {
+    margin: 1%;
+    width: -webkit-fill-available;
+}
+
+.header-container .image {
+    width: 100%;
+    height: 100%;
+}

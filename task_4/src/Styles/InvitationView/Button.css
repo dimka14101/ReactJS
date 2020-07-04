@@ -1,0 +1,27 @@
+.status-button {
+    position: absolute;
+    right: 3%;
+    top: 10%;
+    border-radius: 5px;
+    width: 25%;
+    height: 30%;
+    border: none;
+}
+
+.status-button.arrive {
+    background-color: #94c11e;
+}
+
+.status-button.absent {
+    background-color: #c11e1e;
+}
+
+.footer-button {
+    border-radius: 5px;
+    width: 40%;
+    height: 30%;
+    border: none;
+    margin: 3%;
+    padding: 2%;
+    background-color: #94c11e;
+}
