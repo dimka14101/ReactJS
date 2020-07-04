@@ -11,6 +11,8 @@ import RadarChart from './Components/RadarChart'
 import { ThemeContext } from './Helpers/ContextHelper';
 import ThemeSwitch from './Components/ThemeSwitch'
 
+import RegisterForm from './Components/RegisterForm'
+
 import guests from './guests.json';
 import './App.css'
 
@@ -119,10 +121,11 @@ class App extends Component{
 
 		return (
 			<>
-          {/* Uncomment line below for Chart */}
-          {/* <RadarChart/> */}
+        {/* Uncomment line below for Chart */}
+        <RadarChart/>
 
-        <ThemeContext.Provider value={{ themeMode, changeTheme }}>
+        {/* Uncomment line below for theme */}
+        {/* <ThemeContext.Provider value={{ themeMode, changeTheme }}>
           <div 
             className={`App-Position ${themeMode}`}
           >
@@ -166,7 +169,10 @@ class App extends Component{
                 : <></>
               }
 				  </div>
-        </ThemeContext.Provider>
+        </ThemeContext.Provider> */}
+
+        {/* Uncomment line below for register form with hooks */}
+        {/* <RegisterForm/> */}
 			</>
 		);
 	}
